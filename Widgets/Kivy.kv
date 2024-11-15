@@ -24,3 +24,13 @@ KivyGridLayout:
 
     ProgressBar:
         value: slider_id.value
+
+    TextInput:
+        size_hint: None, 1
+        height: "100dp"
+        multiline: False
+        on_text_validate: root.textinputbehaviour(self)
+
+    Label:
+        text: root.inputtext
+

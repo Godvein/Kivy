@@ -5,6 +5,7 @@ from kivy.properties import StringProperty, BooleanProperty
 class KivyGridLayout(GridLayout):
     mytext = StringProperty("hello!")
     button_disabled = BooleanProperty(False)
+    inputtext = StringProperty("")
 
     def onclick(self):
         self.mytext = "you clicked"
@@ -22,6 +23,9 @@ class KivyGridLayout(GridLayout):
 
     def sliderbehaviour(self, slider):
         print("Slider: ", str(int(slider.value)))
+
+    def textinputbehaviour(self, textinput):
+        self.inputtext = textinput.text
 class KivyApp(App):
     pass
 KivyApp().run()
