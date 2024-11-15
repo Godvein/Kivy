@@ -1,7 +1,6 @@
-# Project Name
+# Kivy Basics
 
-A brief description of what this Kivy project does.
-
+This Kivy Project contains the basics of Kivy framework
 ---
 
 ## About Kivy
