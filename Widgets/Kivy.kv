@@ -2,6 +2,9 @@ KivyGridLayout:
 
 <KivyGridLayout>:
     cols: 3
+    ToggleButton:
+        text: "off"
+        on_state: root.togglebutton(self) #pass self for the state of the button
     Button:
         text: "Click"
         on_press: root.onclick()

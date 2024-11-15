@@ -8,6 +8,12 @@ class KivyGridLayout(GridLayout):
     def onclick(self):
         self.mytext = "you clicked"
 
+    def togglebutton(self, toggle):
+        if toggle.state == "down":
+            toggle.text = "on"
+        else:
+            toggle.text = "off"
+
 class KivyApp(App):
     pass
 KivyApp().run()
