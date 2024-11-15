@@ -17,6 +17,8 @@ class KivyGridLayout(GridLayout):
             toggle.text = "off"
             self.button_disabled = False
 
+    def switchbehaviour(self, switch):
+        print("Switch: " + str(switch.active))
 class KivyApp(App):
     pass
 KivyApp().run()
