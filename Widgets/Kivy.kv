@@ -15,3 +15,8 @@ KivyGridLayout:
 
     Switch:
         on_active: root.switchbehaviour(self)
+
+    Slider:
+        min: 0
+        max: 100
+        on_value: root.sliderbehaviour(self)

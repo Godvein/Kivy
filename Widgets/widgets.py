@@ -19,6 +19,9 @@ class KivyGridLayout(GridLayout):
 
     def switchbehaviour(self, switch):
         print("Switch: " + str(switch.active))
+
+    def sliderbehaviour(self, slider):
+        print("Slider: ", str(int(slider.value)))
 class KivyApp(App):
     pass
 KivyApp().run()
