@@ -17,6 +17,10 @@ KivyGridLayout:
         on_active: root.switchbehaviour(self)
 
     Slider:
+        id: slider_id
         min: 0
         max: 100
         on_value: root.sliderbehaviour(self)
+
+    ProgressBar:
+        value: slider_id.value
