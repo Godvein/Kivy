@@ -1,4 +1,4 @@
-CanvasWidget:
+CanvasWidget1:
 
 #:set s dp(100)
 
@@ -13,3 +13,19 @@ CanvasWidget:
         Line:
             points: (0,0, self.width/4,100, self.width/2,0, self.width*3/4,100, self.width,0)
             width: 10
+
+<CanvasWidget1>:
+    canvas:
+        Color:
+            rgb: 1,0,0
+        Line:
+            circle: (100,100, 50)
+            width: 2
+        Line:
+            ellipse: (300,100, 50, 100)
+            width: 2
+        Color:
+            rgb: 0,1,0
+        Line:
+            rectangle: (200,50, 50,50)
+            width: 2
