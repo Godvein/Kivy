@@ -1,0 +1,23 @@
+WindowManager:
+    MenuScreen:
+        name: "menu"
+    GameScreen:
+        name: "game"
+    
+<MenuScreen>:
+    MenuWidget:
+        name: "menu"
+        Button:
+            text: "Play Game"
+            pos: ((root.width/2) - 300/2, 300)
+            size: (300, 100)
+            on_press: app.root.current = "game"
+        
+
+<GameScreen>:
+    GameWidget:
+        name: "game"
+
+
+
+    
